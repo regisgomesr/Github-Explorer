@@ -29,11 +29,19 @@
         "prettier"
     ],
     "rules": {
+      "prettier/prettier": "error",
+      "@typescript-eslint/camelcase": "off",
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
       "no-use-before-define": "off",
+      "@typescript-eslint/explicit-function-return-type": [
+        "error",
+        {
+          "allowExpressions": true
+        }
+      ],
       "import/extensions": [
         "error",
         "ignorePackages",
@@ -41,8 +49,7 @@
           "ts": "never",
           "tsx": "never"
         }
-      ],
-      "prettier/prettier": "error"
+      ]
     },
     "settings": {
       "import/resolver": {
